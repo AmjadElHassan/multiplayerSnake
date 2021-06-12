@@ -1,0 +1,12 @@
+extends layouts/main-layout.pug
+
+block content
+    h1 game page
+    .vh-100
+        .container.h-100
+            div#gameScreen.h-100
+                .d-flex.flex-column.align-items-center.justify-content-center.h-100
+                    canvas#canvas
+
+block scripts 
+    script(src="/js/chatPage.js")
